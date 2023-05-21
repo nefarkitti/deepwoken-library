@@ -20,7 +20,7 @@ for (const book of books) {
         console.log(book.dataset.bookid)
         if (book.dataset.bookid != undefined) {
             console.log(book.dataset.bookid)
-            window.location.replace(`/book.html#${book.dataset.bookid}`);
+            window.location.replace(`./book.html#${book.dataset.bookid}`);
             window.location.hash = book.dataset.bookid
         }
     })
@@ -70,5 +70,5 @@ function updatePage(n) {
 }
 
 function back() {
-    window.location.replace(`/index.html`);
+    window.location.replace(`./index.html`);
 }
