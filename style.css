@@ -232,7 +232,7 @@ truecenter {
     box-sizing: border-box;         /* Opera/IE 8+ */
     display: flexbox;
     font-size: 18px;
-    overflow-y:scroll;
+    overflow-y:auto;
     padding-top: 2rem;
 }
 .book-pages {
