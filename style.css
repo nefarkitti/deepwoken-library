@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Volkhov&display=swap');
+
+.material-symbols-sharp {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 700,
+  'GRAD' 200,
+  'opsz' 48
+}
+
+body {
+    margin: 0;
+}
+
+.bg {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#503D26, #000000);
+}
+
+a {
+    color: aquamarine;
+    text-decoration: none;
+}
+
+truecenter {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.hold {
+    padding: 0.5rem;
+    color: white;
+    border: 1px solid transparent;
+    background-image: url('background.png');
+    border-image: url('border.png') 45%;
+    border-image-width: 15px;
+    border-image-outset: 2px;
+    display: grid;
+    justify-items: center;
+    clear: both;
+    overflow: hidden;
+}
+
+.main {
+    width: 50vw;
+    height: 80vh;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    justify-self: center;
+    justify-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    display: inline-block;
+    width: 95%;
+    text-align: center;
+    background-color: #586865;
+    border: 1px solid transparent;
+    border-image: url('border.png') 45%;
+    border-image-width: 15px;
+    border-image-outset: 2px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    clear: both;
+}
+
+.subtitle {
+    font-size: 25px;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    text-indent: 0.6rem;
+    text-shadow: 8px 5px black;
+}
+
+.bookshelf-top {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    border: none;
+    top: 0.2px;
+    object-fit: contain;
+}
+.bookshelf {
+    background-color: white;
+    padding: 0.5rem;
+    height: 55.5vh;
+    overflow-y: scroll;
+    width: fit-content;
+    border: 1px;
+    border-image: url('bookshelfborderOUTER.png') 45%;
+    border-image-width: 20px;
+    border-image-outset: 5px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+.shelf {
+    background-color: #ffffff;
+    color: #575757;
+    overflow-y: scroll;
+    word-wrap: break-word;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    padding: 0.1rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    border: 1px solid transparent;
+    border-image: url('bookshelfborderINNER.png') 45%;
+    border-image-width: 20px;
+    border-image-outset: 2px;
+    margin-bottom: 0.5rem;
+}
+.list-item {
+    background-image: url('book.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    user-select: none;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    writing-mode: vertical-rl;
+    padding: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 13rem;
+    width: 1.1rem;
+    max-width: 1.1rem;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    max-height: 13rem;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding-top: 1rem;
+    padding-bottom: 0.7rem;
+    font-weight: bold;
+}
+.list-item .author {
+    display: none;
+    font-size: 10px;
+    font-style: italic;
+}
+.list-item:hover {
+    cursor: pointer;
+    color: black;
+    filter: brightness(90%);
+}
+
+.misc {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #575757;
+}
+
+.thing {
+    position: fixed;
+    z-index: 100;
+    color: white;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    border: 1px solid transparent;
+    background-image: url('background.png');
+    border-image: url('border.png') 45%;
+    border-image-width: 15px;
+    border-image-outset: 2px;
+    padding: 0.5rem;
+    text-shadow: 5px 5px black;
+}
+
+.book {
+    width: 30vw;
+    height: 85vh;
+    margin: 0;
+}
+
+.book-header {
+    font-family: 'Roboto', sans-serif;
+    text-shadow: none;
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    width: 100%;
+}
+.closebtn {
+    display: inline;
+    float: right;
+    user-select: none;
+    color: #575757;
+    right: 0.9rem;
+    top: 0.9rem;
+    position: absolute;
+}
+.closebtn:hover {
+    color: black;
+    cursor: pointer;
+}
+.book-title-segment h2 {
+    text-align: center;
+    margin-top: 1.5rem;
+    text-decoration: underline;
+}
+.book-title-segment .flavour {
+    font-style: italic;
+    text-align: center;
+}
+.book-contents {
+    color: #575757;
+    background-color: #E5E0CA;
+    height: 94%;
+    border: 1px solid transparent;
+    border-image: url('border.png') 45%;
+    border-image-width: 15px;
+    border-image-outset: 2px;
+    padding: 0.7rem;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    display: flexbox;
+    font-size: 18px;
+    overflow-y:scroll;
+    padding-top: 2rem;
+}
+.book-pages {
+    text-align: center;
+    bottom: 1rem;
+    align-self: flex-end;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: inline;
+    vertical-align: auto;
+    font-size: 15px;
+    user-select: none;
+    font-family: 'Roboto', sans-serif;
+}
+.book-pages span {
+    font-size: 20px;
+    display: inline;
+    vertical-align: bottom;
+}
+.book-pages span#page-number-text {
+    font-size: 15px !important;
+}
+.book-pages span.arrow:hover {
+    color: white;
+    cursor: pointer;
+}
